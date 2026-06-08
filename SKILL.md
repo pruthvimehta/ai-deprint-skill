@@ -12,7 +12,7 @@ description: |
 
 # AI Deprint
 
-Remove AI writing fingerprints. Fast, surgical, no fluff.
+Remove AI writing fingerprints. Structure first, words second.
 
 ---
 
@@ -27,234 +27,182 @@ YouTube: [Pruthvi Mehta](https://www.youtube.com/@pruthvimehta)
 
 ## What This Skill Does
 
-Takes any text and strips out the patterns that make it scream "AI wrote this." 
-No personality injection, no rewriting from scratch. Just targeted removal of the tells.
+Strips the patterns that make writing scream "AI wrote this." Does not add personality or change voice. That is the voice-fingerprint skill's job.
 
 ---
 
-## The 12 AI Fingerprints to Remove
+## Step 1: Read First, Fix Nothing
 
-### 1. Em Dashes (—)
-The single biggest AI tell. Replace with a comma, period, or rewrite the sentence.
+Before touching anything, read the full text and answer three questions:
 
-**Before:** This is important — and you should know it.  
-**After:** This is important. You should know it.
+**What format is this?**
+LinkedIn post / reel script / carousel / newsletter / long-form / other
 
----
+**How AI-heavy is it?**
+- Lightly AI-sounding → use Light mode (fix only obvious tells, preserve structure)
+- Heavily AI-sounding → use Deep mode (full rebuild, meaning stays identical)
+- Just want an audit → use Detect mode (list issues only, no rewrite)
 
-### 2. Fragmented Sentences Used for Drama
-AI loves dropping one-word or two-word sentences for fake emphasis.
+Default to Light if not specified.
 
-**Before:** The results were clear. Devastating. Irreversible.  
-**After:** The results were clear, devastating, and irreversible.
-
----
-
-### 3. Robotic Transition Phrases
-These phrases never appear in real human writing the way AI uses them.
-
-**Remove or replace:**
-- "Furthermore," → just continue the thought
-- "Moreover," → "also" or remove
-- "In addition," → just add it naturally
-- "It is worth noting that" → delete and state the thing
-- "It is important to note that" → delete
-- "Notably," → delete or rewrite
-- "Additionally," → "also" or remove
-- "Consequently," → "so" or "which means"
-- "Nevertheless," → "still" or "but"
-- "Henceforth," / "Herein," → rewrite entirely
+**What is the writer's intent?**
+Understand what the piece is trying to do before deciding what to fix. Some patterns that look like AI tells are actually deliberate voice choices. The rule throughout this skill: fix what looks like autopilot, leave what looks like a choice.
 
 ---
 
-### 4. Fake Depth Words
-AI vocabulary that sounds smart but adds nothing.
+## Step 2: Check Structure Before Words
 
-**Remove or replace:**
-- "delve into" → "look at" / "explore"
-- "tapestry" (used metaphorically) → rewrite
-- "nuanced" → say what the nuance actually is
-- "multifaceted" → be specific
-- "groundbreaking" → explain what makes it new
-- "paradigm shift" → describe the actual change
-- "landscape" (used metaphorically) → "space" or be specific
-- "robust" → "strong" / "reliable"
-- "leverage" (as a verb) → "use"
-- "unlock" (metaphorically) → "enable" / "allow"
-- "empower" → say what it specifically lets people do
-- "revolutionize" → be specific about the change
-- "foster" → "build" / "create"
-- "synergy" → delete or be specific
-- "holistic" → explain what you mean
+Most AI fingerprints live in structure, not vocabulary. Fixing words while structure is broken is wasted effort.
 
----
+Scan for these structural issues. Fix the ones present. Skip the ones that are not.
 
-### 5. The Rule of Three (Over-used)
-AI almost always lists things in threes. Break the pattern.
+**Bloated setup**
+The real point is buried in paragraph 3 after unnecessary context, scene-setting, or justification. Find the actual point. Move it to the top. Cut everything before it that does not earn its place.
 
-**Before:** She was smart, driven, and unstoppable.  
-**After:** She was relentlessly driven.
+*Before:* "In today's world, communication has become increasingly important. Whether you are a student, professional, or entrepreneur, the ability to speak clearly matters. That is why I wanted to share something I've been thinking about. Public speaking is a skill most people avoid."
+*After:* "Public speaking is a skill most people avoid."
 
----
+**Uniform paragraph lengths**
+Every paragraph is 2 to 3 sentences. Same rhythm, same block size, looks like a template. Mix deliberately — one-liners next to longer blocks. The contrast signals a human made choices.
 
-### 6. Negative Parallelism ("Not just X, but Y")
-A very common AI construction. Sounds like ad copy.
+**Equal weight across all points**
+Three ideas, three equal paragraphs, three identical sentence counts. Identify the point that matters most. Give it more space and specificity. Let the others be brief — even one sentence if they are secondary.
 
-**Before:** This is not just a product. It is a movement.  
-**After:** This product is a movement.
+**Over-explained hook**
+The opening gives context, sets up stakes, explains why this matters — before the actual hook arrives. By then the reader is gone. The hook should create a question, not answer one. One line. Drop the reader in.
 
-**Before:** It's not just about the money — it's about the mission.  
-**After:** The mission matters more than the money.
+*Before:* "When it comes to LinkedIn, most people focus on posting consistently. But there is something more important most creators overlook."
+*After:* "Posting consistently on LinkedIn is the wrong goal."
+
+**Forced transitions**
+Not just robotic ones (Furthermore, Moreover). Also placed-sounding ones — "I've been there," "Here's the thing," "And that's when it hit me," "The truth is." These do the structural work the writing should be doing. Remove the transition. If the paragraph still connects, the transition was unnecessary. If it does not, fix the order — not the bridge.
+
+**Front-loaded disclaimer**
+"This may not apply to everyone," "Of course, results vary," "This is just my perspective." Sounds balanced but drains authority from everything that follows. Remove. If the nuance matters, put it in the body.
+
+**Generic ending**
+Ends with a lesson, a summary, or an inspirational closer. Delete it and see if the piece is stronger. It usually is. If a CTA is needed, one direct line — not a paragraph.
+
+*Before:* "These three habits have genuinely changed how I work. I hope they help you too. Remember, small consistent actions compound over time. Start today."
+*After:* "Try one this week. See what shifts."
 
 ---
 
-### 7. Sycophantic Openers
-AI loves to validate before answering.
+## Step 3: Apply Format-Specific Fixes
 
-**Remove entirely:**
-- "Great question!"
-- "Absolutely!"
-- "Certainly!"
-- "Of course!"
-- "That's a fantastic point."
-- "You're absolutely right."
+After structure, apply fixes specific to the format. Only the format that matches — skip the rest.
 
----
+**LinkedIn Post**
+- Hook stands alone as one line. No setup before it.
+- No bold headers mid-post unless intentionally a list format.
+- Paragraphs 1 to 3 lines max. White space is not wasted.
+- CTA is one direct line, not a paragraph of encouragement.
+- Post does not summarize itself at the end.
+- "What do you think? Let me know in the comments." — cut it or replace with a real specific question.
 
-### 8. Copula Avoidance (serves as / functions as / stands as)
-AI avoids the word "is." Use "is."
+**Reel Script**
+- First line out of the speaker's mouth creates a question, not context.
+- Most important step gets more words. Steps are not equal length.
+- Ending line lands with weight, does not summarize.
+- "Save this" or "Comment X for Y" is one clean line.
+- "Now, moving on to step two..." — cut, just start the step.
 
-**Before:** This tool serves as a foundation for collaboration.  
-**After:** This tool is a foundation for collaboration.
+**Carousel**
+- Slide 1 makes someone want to swipe. It does not explain the carousel.
+- Each slide has one idea.
+- Last slide CTA is direct. Not "I hope this was helpful. If you found value, please share."
+- Every slide the same word count looks templated — vary deliberately.
+- One-line lesson summary in italics at the end of every slide — remove it.
 
-**Before:** The result functions as a benchmark.  
-**After:** The result is a benchmark.
-
----
-
-### 9. -ing Phrase Endings (Fake Depth Add-ons)
-AI tacks on present participle phrases to seem analytical. Cut them.
-
-**Before:** The policy reduced costs, highlighting the importance of efficiency.  
-**After:** The policy reduced costs.
-
-**Before:** She left the company, reflecting a broader trend in the industry.  
-**After:** She left the company. (Add the trend as a separate sentence only if it's actually relevant and sourced.)
+**Newsletter / Long-form**
+- Intro does not restate what the whole piece is about. Start inside the content.
+- Section headers are not all the same grammatical structure.
+- "In summary..." at the end of each section — cut it, the reader just read it.
 
 ---
 
-### 10. Vague Significance Inflation
-Making ordinary things sound historic.
+## Step 4: Fix Word-Level Tells
 
-**Remove phrases like:**
-- "marks a pivotal moment"
-- "testament to"
-- "underscores the importance of"
-- "reflects broader trends"
-- "shaping the future of"
-- "in today's rapidly evolving landscape"
-- "at the intersection of"
+These are signals, not laws. Before fixing any of these, ask: deliberate or default? If the writer chose it, leave it. Only fix what looks like autopilot.
 
-Just state the fact. Leave the interpretation to the reader.
+**Always fix — these are almost never deliberate:**
+- Em dashes (—) → comma, period, or rewrite the sentence
+- Sycophantic openers (Great question! Absolutely! Certainly!) → delete entirely
+- Copula avoidance (serves as, functions as, stands as) → replace with "is"
+- Robotic transitions (Furthermore, Moreover, Additionally, It is worth noting that, It is important to note that, Consequently, Nevertheless) → remove or use plain connectives like "also", "so", "but", "still"
+- Stacked hedging (could potentially possibly be argued that) → one hedge maximum
 
----
-
-### 11. Generic Positive Conclusions
-Every AI essay ends the same way. Cut it or rewrite with something specific.
-
-**Before:** The future looks bright. Exciting times lie ahead as we continue this journey.  
-**After:** (State one specific thing that happens next, or end on the last actual point.)
+**Fix when they look automatic, leave when they look chosen:**
+- Dramatic sentence fragments ("Devastating. Irreversible.") → merge only if the fragment is padding, not punch
+- Trailing -ing phrases (highlighting the importance of, reflecting a broader trend) → cut when they add nothing, keep when they add a genuinely distinct observation
+- Fake depth words (delve into, tapestry, nuanced, multifaceted, groundbreaking, paradigm shift, landscape, robust, leverage, unlock, empower, foster, synergy, holistic, seamless) → replace with plain words or specifics
+- Significance inflation (marks a pivotal moment, testament to, underscores the importance of, shaping the future of, in today's rapidly evolving landscape, at the intersection of) → state the fact, leave the interpretation to the reader
+- Negative parallelism ("It's not just X, it's Y") → simplify to one claim when the contrast is hollow, keep when the contrast is the point
+- Rule of three → check if the third point earns its place or just completes the pattern. Two strong points beat three where one is weak.
+- Generic positive conclusion → end on the last real point instead
 
 ---
 
-### 12. Excessive Hedging Stacked Together
-One hedge is fine. Three in a row is AI.
+## Step 5: Self-Audit Pass
 
-**Before:** It could potentially possibly be argued that this might have some effect.  
-**After:** This may affect the outcome.
+After rewriting, stop. Read the output fresh and ask one question: **what in this still sounds AI-generated?**
+
+Look specifically for:
+- Sentences that technically broke no rule but feel over-polished
+- Rhythm that is still too even across paragraphs
+- Transitions that feel placed even if they are not on the list
+- Any line where the writing went on autopilot
+
+Fix what you find. This second pass catches what the first misses.
 
 ---
 
-## Modes
+## Step 6: Read Aloud Check
 
-Pick the mode based on how much the text needs fixing. If the user does not specify, default to Light.
-
-### Detect
-Flag AI patterns without rewriting anything. Return a bullet list of issues found and which lines they appear in. No cleaned version.
-
-Use when: user says "check this", "audit this", "what is wrong here", or wants to see issues before committing to a rewrite.
-
-### Light (default)
-Fix only the obvious, glaring tells. Touch as few words as possible. Preserve the original structure and flow.
-
-Use when: the draft is mostly fine and just needs a quick clean-up.
-
-### Deep
-Rebuild the full text. Fix all 12 fingerprints, vary sentence rhythm, remove over-polished phrasing. The output may look quite different from the input but the meaning stays identical.
-
-Use when: the draft is heavily AI-sounding, or the user says "full rewrite", "completely deprint this", "make it unrecognizable as AI."
+Read the cleaned version aloud — or imagine it being spoken. Flag 1 to 2 lines that read fine on paper but would sound unnatural spoken. These are the last 5% that separate good from great. Mark them clearly in the output so the writer can decide whether to fix manually.
 
 ---
 
 ## Non-Negotiables
 
-These rules apply in ALL modes, no exceptions:
-
+These apply in every mode, no exceptions:
 - Never change facts, numbers, dates, or names
-- Never invent examples or personal experiences that were not in the original
+- Never invent examples or experiences not in the original
 - Never remove technical nuance from finance, tax, legal, or educational content
-- Never add slang unless the original text clearly uses it
-- Never flatten a specific claim into a vague one to make it sound cleaner
-- If unsure whether a line is AI-written or just the person's actual style, leave it
-
----
-
-## How to Run This Skill
-
-**Step 1:** Identify the mode (detect / light / deep) — default to light if not specified  
-**Step 2:** Read the full text before touching anything  
-**Step 3:** Scan for all 12 fingerprints  
-**Step 4:** Fix based on mode — surgical in light, full rebuild in deep  
-**Step 5:** Read aloud test — does any sentence still feel robotic?  
-**Step 6:** Output
+- Never add slang unless the original clearly uses it
+- Never flatten a specific claim into a vague one
+- When unsure whether a line is AI or just the person's style — leave it
 
 ---
 
 ## Output Format
 
-**Detect mode:** bullet list of issues only, no rewrite  
-**Light / Deep mode:**
+**Detect mode**
+Bullet list of issues organized as:
+- Structural issues first
+- Word-level issues second
+
+Each issue tagged:
+- **Critical** — fix before posting (structural problems, em dashes, sycophantic openers)
+- **Moderate** — fix if time permits (fake depth words, -ing endings, significance inflation)
+- **Minor** — optional, low visible impact (rule of three, copula avoidance, stacked hedging)
+
+No rewrite in Detect mode.
+
+**Light / Deep mode**
 1. Cleaned text
-2. What was fixed (brief bullets)
+2. What was fixed — brief bullets
+3. Read aloud flag — 1 to 2 lines that still feel slightly off when spoken
 
-Do NOT return a side-by-side diff unless asked.  
-Do NOT add personality or change voice — that is the voice-fingerprint skill.  
+Do not return a side-by-side diff unless asked.
+Do not add personality or change voice — that is the voice-fingerprint skill.
 This skill only removes. It does not add.
-
----
-
-## Quick Reference Card
-
-| Fingerprint | Fix |
-|---|---|
-| Em dash (—) | Comma, period, or rewrite |
-| Dramatic fragments | Merge into full sentence |
-| Furthermore / Moreover / Additionally | Remove or use "also" |
-| Delve, tapestry, nuanced, robust, leverage | Replace with plain words |
-| Rule of three | Cut to one or two |
-| Not just X, but Y | Simplify to one claim |
-| Great question! / Absolutely! | Delete |
-| Serves as / Functions as | Replace with "is" |
-| -ing phrase endings | Cut or make standalone sentence |
-| Significance inflation | Delete, just state the fact |
-| Generic positive conclusion | End on the last real point |
-| Triple hedging | One hedge max |
 
 ---
 
 ## About the Skill Builder
 
-**Pruthvi Mehta** — CA, content creator, and AI tools educator based in Ahmedabad.  
-Instagram: [@ca.pruthvimehta](https://instagram.com/ca.pruthvimehta)  
-LinkedIn: [pruthvimehta](https://www.linkedin.com/in/pruthvimehta)  
+**Pruthvi Mehta** — CA, content creator, and AI tools educator based in Ahmedabad.
+Instagram: [@ca.pruthvimehta](https://instagram.com/ca.pruthvimehta)
+LinkedIn: [pruthvimehta](https://www.linkedin.com/in/pruthvimehta)
 YouTube: [Pruthvi Mehta](https://www.youtube.com/@pruthvimehta)

@@ -1,6 +1,6 @@
 # AI Deprint — Claude Skill
 
-Remove AI writing fingerprints from any text. This skill surgically strips the patterns that make writing scream "AI wrote this" — em dashes, fragmented sentences, robotic transitions, fake depth vocabulary, and 8 more tells — without changing your facts, voice, or meaning.
+Remove AI writing fingerprints from any text. This skill uses a 6-step structured workflow — fixing structure first, then words — to strip the patterns that make writing scream "AI wrote this." Works across LinkedIn posts, reel scripts, carousels, newsletters, and long-form content.
 
 ---
 
@@ -26,26 +26,20 @@ Say any of these to Claude and the skill activates automatically:
 2. Go to **[claude.ai](https://claude.ai)** → **Skills** → **Create Skill**
 3. Upload the **ZIP file** directly → **Save**
 
-That's it. No API keys, no Python, no setup required.
+No API keys, no Python, no setup required.
 
 ---
 
-## The 12 AI Fingerprints It Removes
+## How It Works — The 6-Step Workflow
 
-| Fingerprint | Fix |
+| Step | What It Does |
 |---|---|
-| Em dash (—) | Comma, period, or rewrite |
-| Dramatic fragments | Merge into full sentence |
-| Furthermore / Moreover / Additionally | Remove or use "also" |
-| Delve, tapestry, nuanced, robust, leverage | Replace with plain words |
-| Rule of three | Cut to one or two |
-| Not just X, but Y | Simplify to one claim |
-| Great question! / Absolutely! | Delete |
-| Serves as / Functions as | Replace with "is" |
-| -ing phrase endings | Cut or make standalone sentence |
-| Significance inflation | Delete, just state the fact |
-| Generic positive conclusion | End on the last real point |
-| Triple hedging | One hedge max |
+| **1. Read First, Fix Nothing** | Identifies format, AI-heaviness, and writer's intent before touching anything |
+| **2. Check Structure Before Words** | Fixes bloated setups, uniform paragraphs, forced transitions, and generic endings |
+| **3. Format-Specific Fixes** | Applies targeted fixes for LinkedIn, Reel scripts, Carousels, and Newsletters |
+| **4. Word-Level Tells** | Removes em dashes, sycophantic openers, fake depth words, robotic transitions |
+| **5. Self-Audit Pass** | Re-reads output fresh to catch over-polished sentences missed in the first pass |
+| **6. Read Aloud Check** | Flags 1–2 lines that read fine but would sound unnatural when spoken |
 
 ---
 
@@ -53,11 +47,19 @@ That's it. No API keys, no Python, no setup required.
 
 | Mode | When to Use |
 |---|---|
-| **Detect** | Audit text for AI patterns without rewriting — returns a bullet list of issues |
-| **Light** (default) | Fix only the obvious tells, preserve original structure |
-| **Deep** | Full rebuild — removes all 12 fingerprints, varies rhythm, may look quite different |
+| **Detect** | Audit text for AI patterns (Critical / Moderate / Minor) without rewriting |
+| **Light** (default) | Fix only obvious tells, preserve original structure |
+| **Deep** | Full rebuild — all fingerprints removed, meaning stays identical |
 
-Default is **Light** if you don't specify a mode.
+---
+
+## What It Always Fixes (No Exceptions)
+
+- **Em dashes (—)** → comma, period, or rewrite
+- **Sycophantic openers** (Great question! Absolutely!) → deleted entirely
+- **Copula avoidance** (serves as, functions as) → replaced with "is"
+- **Robotic transitions** (Furthermore, Moreover, Additionally) → removed or simplified
+- **Stacked hedging** (could potentially possibly be argued) → one hedge maximum
 
 ---
 
@@ -78,16 +80,9 @@ ai-deprint/
 
 ---
 
-## How It Works
+## Non-Negotiables
 
-1. Identifies the mode (detect / light / deep)
-2. Reads the full text before touching anything
-3. Scans for all 12 AI fingerprints
-4. Fixes based on mode — surgical in light, full rebuild in deep
-5. Does a "read aloud" test to catch remaining robotic phrasing
-6. Returns the cleaned text + a brief list of what was fixed
-
-**Non-negotiables:** Never changes facts, numbers, or names. Never adds content that wasn't in the original. Never flattens a specific claim into a vague one.
+Never changes facts, numbers, dates, or names. Never adds content not in the original. Never flattens a specific claim into a vague one. When unsure if a line is AI or the writer's actual style — leaves it.
 
 ---
 
